@@ -10,7 +10,7 @@ def main():
     test_data=np.load(os.path.join("data","raw","test.npz"))
     x_train_full=(train_data["image"] / 255.0) * 0.8
     y_train_full=train_data["label"]
-    x_test=test_data["image"] / 255.0
+    x_test=test_data["image"] / 254.0
     y_test=test_data["label"]
     x_train,x_val,y_train,y_val=train_test_split(
         x_train_full,y_train_full,
