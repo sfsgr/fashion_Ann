@@ -1,6 +1,6 @@
 preprocess:
   test_size: 0.15
-  seed: 42
+  seed: 101
 train:
   dense_units: 128
   dropout_rate: 0.2
